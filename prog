@@ -1,0 +1,13 @@
+string [] arr1 = {"13465", "2666", "333","765"};
+string [] arr2;
+int i = 0;
+int j = 0;
+for (int i=0; i < arr1.Length; i++)
+{
+    if (arr1[i].Length<=3)
+    {
+       arr2[j] = arr1[i];
+       j++;
+    }
+}
+Console.WriteLine("Итоговый массив: ",String.Join(", ", arr2));
